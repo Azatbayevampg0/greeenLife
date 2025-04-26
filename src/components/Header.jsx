@@ -27,24 +27,30 @@ function Header() {
 		<header className='sticky top-0 z-10 border-b bg-white'>
 			<div className='container mx-auto flex h-16 items-center justify-between px-4'>
 				<div className='flex items-center gap-2'>
-				<img src={headerLogo} alt="headerLogo" width={120} height="auto" />
-				<Link to='/' className='text-sm font-medium'>
-						Bosh sahifa
+					<Link to='/' className='text-sm font-medium'>
+						<img src={headerLogo} alt='headerLogo' width={120} height='auto' />
 					</Link>
 				</div>
 				<nav className='hidden md:flex items-center gap-6'>
-					
+					<Link to='/media' className='text-sm font-medium'>
+						Media
+					</Link>
 					<Link to='/problems' className='text-sm font-medium'>
 						Muammolar
+					</Link>
+          <Link to='/user' className='text-sm font-medium'>
+						Foydalanuvchi
 					</Link>
 					<Link to='/statistics' className='text-sm font-medium'>
 						Statistika
 					</Link>
-					<Link to='/media' className='text-sm font-medium'>
-						Media
-					</Link>
-					<Link to='/about' className='text-sm font-medium'>
+
+					<Link to='/contacts' className='text-sm font-medium'>
 						Biz haqimizda
+					</Link>
+
+					<Link to='/volonteer' className='text-sm font-medium'>
+						Ko'ngillilar
 					</Link>
 					<Link to='/about' className='text-sm font-medium'>
 						{user.firstName}
